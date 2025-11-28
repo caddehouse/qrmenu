@@ -24,7 +24,7 @@
     </footer>
 
     <script>
-        const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTAXngTxVZ7_mExTFAHXATjChoQc4CKy_ob_2jAFcfY8bwoN6VBfCoMCc9u81PdRa-MJyQerdcw7wj0/pub?output=csv'; // CSV dosya yolu
+        const url = 'menu.csv';
 
         async function loadMenu() {
             try {
@@ -33,7 +33,7 @@
                 const menuData = processCSV(data);
                 displayMenu(menuData);
             } catch (error) {
-                console.error('Error loading menu:', error);
+                console.error('Menu yüklenirken hata oluştu:', error);
             }
         }
 
@@ -56,12 +56,11 @@
         function displayMenu(menuData) {
             const menuContainer = document.getElementById('menu');
 
-            // Mevcut kategoriler
             let categories = [...new Set(menuData.menu.map(item => item.category))];
 
-            // İstediğimiz kategori sırası
+            // İstediğin sıralama
             const desiredOrder = [
-                "Meşrubatlar"
+                "Meşrubatlar",
                 "Soğuk Kahveler",
                 "Sıcak Kahveler",
                 "Özel Soğuk İçecekler",
@@ -75,10 +74,9 @@
                 "Makarnalar",
                 "Tavuk Yemekleri",
                 "Et Yemekleri",
-                "Salatalar",
+                "Salatalar"
             ];
 
-            // Mevcut kategorileri sıralama
             categories.sort((a, b) => desiredOrder.indexOf(a) - desiredOrder.indexOf(b));
 
             categories.forEach(category => {
