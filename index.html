@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto p-4 flex justify-center items-center">
+      <h1 class="text-xl font-bold">Restaurant Menu</h1>
+    </div>
+  </header>
+
+  <div id="menu" class="container mx-auto p-4 grid grid-cols-1 gap-4 mt-4"></div>
+
+  <footer class="bg-white shadow-md mt-4">
+    <div class="container mx-auto p-4 text-center">
+      <p class="text-gray-600">&copy; 2025 Restaurant Menu</p>
+    </div>
+  </footer>
+
+  <!-- PapaParse kütüphanesi -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script>
+    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTAXngTxVZ7_mExTFAHXATjChoQc4CKy_ob_2jAFcfY8bwoN6VBfCoMCc9u81PdRa-MJyQerdcw7wj0/pub?output=csv";
+
+    Papa.parse(sheetUrl, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: function(results) {
+        const menuData = results.data;
+        const menuContainer = document.getElementById("menu");
+
+        // Eğer data boşsa uyar
+        if (!menuData || menuData.length === 0) {
+          menuContainer.innerHTML = "<p>Menü verisi bulunamadı.</p>";
+          return;
+        }
+
+        // Varsayalım sheet’te sütun isimleri: Ürün, Açıklama, Fiyat, Resim, Kategori
+        const categories = [...new Set(menuData.map(item => item.Kategori || "Genel"))];
+
+        categories.forEach(category => {
+          const section = document.createElement("div");
+          section.className = "mb-6";
+
+          const title = document.createElement("h2");
+          title.className = "text-2xl font-bold mb-4";
+          title.textContent = category;
+          section.appendChild(title);
+
+          const grid = document.createElement("div");
+          grid.className = "grid grid-cols-1 md:grid-cols-2 gap-4";
+
+          menuData
+            .filter(item => (item.Kategori || "Genel") === category)
+            .forEach(item => {
+              const card = document.createElement("div");
+              card.className = "bg-white rounded-lg shadow-lg overflow-hidden";
+
+              card.innerHTML = `
+                <div class="flex gap-4 p-4">
+                  ${item.Resim ? `<img src="${item.Resim}" alt="${item.Ürün}" class="w-24 h-24 object-cover border rounded-lg">` : ""}
+                  <div class="flex flex-col justify-between w-full">
+                    <div class="menu-content flex justify-between items-center">
+                      <span class="text-lg font-semibold">${item.Ürün}</span>
+                      <span class="text-gray-900 font-bold">${item.Fiyat} TL</span>
+                    </div>
+                    <div class="menu-ingredients text-xs text-gray-600 mt-2">
+                      ${item.Açıklama || ""}
+                    </div>
+                  </div>
+                </div>
+              `;
+              grid.appendChild(card);
+            });
+
+          section.appendChild(grid);
+          menuContainer.appendChild(section);
+        });
+      },
+      error: function(err) {
+        console.error("PapaParse error:", err);
+        const menuContainer = document.getElementById("menu");
+        menuContainer.innerHTML = "<p>Menü yüklenirken hata oluştu.</p>";
+      }
+    });
+  </script>
+</body>
+</html>
