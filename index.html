@@ -2,6 +2,35 @@
 <html lang="tr">
 
 <head>
+    <style>
+    body {
+        background-color: #ffffff;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Arka plan CADDE HOUSE watermark */
+    .watermark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+        opacity: 0.08;
+        display: grid;
+        place-items: center;
+        pointer-events: none;
+        transform: rotate(-25deg);
+        font-size: 90px;
+        font-weight: 700;
+        color: #cc7a00; /* Turuncu-kahve */
+        letter-spacing: 20px;
+        text-align: center;
+        line-height: 1.4;
+        white-space: pre;
+    }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadde House Menu</title>
@@ -9,6 +38,12 @@
 </head>
 
 <body class="bg-gray-100">
+    <div class="watermark">
+CADDE HOUSE   CADDE HOUSE   CADDE HOUSE
+CADDE HOUSE   CADDE HOUSE   CADDE HOUSE
+CADDE HOUSE   CADDE HOUSE   CADDE HOUSE
+</div>
+
     <header class="bg-white shadow-md">
         <div class="container mx-auto p-4 flex justify-center items-center">
             <h1 class="text-xl font-bold">Cadde House Menu</h1>
@@ -117,39 +152,8 @@
 
         loadMenu();
     </script>
-    <style>
-    body {
-        background: #ffffff;
-        background-image:
-            repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 40px,
-                rgba(0, 0, 0, 0.03) 40px,
-                rgba(0, 0, 0, 0.03) 41px
-            );
-    }
+   
 
-    /* CADDE HOUSE yazılarından oluşan watermark */
-    body::before {
-        content: "CADDE HOUSE  CADDE HOUSE  CADDE HOUSE  CADDE HOUSE";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        font-size: 70px;
-        font-weight: bold;
-        color: #cc7a00;
-        opacity: 0.06;
-        pointer-events: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(-20deg);
-        z-index: -1;
-    }
-</style>
 
 </body>
 
