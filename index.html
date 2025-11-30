@@ -16,42 +16,45 @@
         overflow-x: hidden;
     }
 
-    /* Büyük ve daha çapraz CADDE HOUSE watermark */
     /* Büyük ve çapraz CADDE HOUSE watermark */
-.watermark {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%) rotate(-18deg);
-    font-size: clamp(40px, 12vw, 150px); /* Mobilden büyük ekrana uyumlu */
-    font-weight: 900;
-    color: rgba(255, 140, 0, 0.12); /* Daha koyu turuncu-kahve */
-    z-index: -1;
-    pointer-events: none;
-    white-space: nowrap;
-    user-select: none;
-    text-align: center;
-}
+    .watermark {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%) rotate(-18deg);
+        font-size: clamp(40px, 12vw, 150px); /* Mobilden büyük ekrana uyumlu */
+        font-weight: 900;
+        color: rgba(255, 140, 0, 0.12); /* Daha koyu turuncu-kahve */
+        z-index: -1;
+        pointer-events: none;
+        white-space: nowrap;
+        user-select: none;
+        text-align: center;
+    }
 
-/* İki watermark için farklı top konumları */
-.watermark1 {
-    top: 40%; /* üstteki yazı */
-}
-.watermark2 {
-    top: 60%; /* alttaki yazı */
-}
+    /* İki watermark için farklı top konumları */
+    .watermark1 {
+        top: 40%; /* üstteki yazı */
+    }
 
-
+    .watermark2 {
+        top: 60%; /* alttaki yazı */
+    }
 
     /* Menü kutuları */
     .menu-box {
-        color: rgba(255, 140, 0, 0.07);
+        background: rgba(255, 255, 255, 0.95);
+        color: #333333; /* Ürünler görünür siyah */
         backdrop-filter: blur(3px);
         padding: 14px;
         border-radius: 12px;
         margin-bottom: 16px;
     }
-</style>
 
+    /* Menü başlıkları */
+    .menu-title {
+        color: rgba(255, 140, 0, 0.25); /* Hafif turuncu-kahve */
+    }
+    </style>
 
 </head>
 
@@ -132,7 +135,7 @@
                 section.className = 'mb-8';
 
                 const title = document.createElement('h2');
-                title.className = 'text-2xl font-bold mb-4';
+                title.className = 'text-2xl font-bold mb-4 menu-title';
                 title.textContent = category;
 
                 menuContainer.appendChild(title);
