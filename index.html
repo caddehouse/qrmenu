@@ -10,52 +10,78 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <style>
-    body {
-        background-color: #ffffff;
-        position: relative;
-        overflow-x: hidden;
-    }
+        body {
+            background-color: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-    /* Büyük ve çapraz CADDE HOUSE watermark */
-    .watermark {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%) rotate(-18deg);
-        font-size: clamp(40px, 12vw, 150px); /* Mobilden büyük ekrana uyumlu */
-        font-weight: 900;
-        color: rgba(255, 140, 0, 0.12); /* Daha koyu turuncu-kahve */
-        z-index: -1;
-        pointer-events: none;
-        white-space: nowrap;
-        user-select: none;
-        text-align: center;
-    }
+        /* CADDE HOUSE watermark */
+        .watermark {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%) rotate(-18deg);
+            font-size: clamp(40px, 12vw, 150px);
+            font-weight: 900;
+            color: rgba(255, 140, 0, 0.12);
+            z-index: -1;
+            pointer-events: none;
+            white-space: nowrap;
+            user-select: none;
+            text-align: center;
+        }
 
-    /* İki watermark için farklı top konumları */
-    .watermark1 {
-        top: 40%; /* üstteki yazı */
-    }
+        .watermark1 {
+            top: 40%;
+        }
 
-    .watermark2 {
-        top: 60%; /* alttaki yazı */
-    }
+        .watermark2 {
+            top: 60%;
+        }
 
-    /* Menü kutuları */
-    /* Menü başlıkları (kategori) */
-.menu-title {
-    color: rgba(255, 140, 0, 0.35); /* Daha koyu turuncu-kahve */
-    font-weight: 900; /* Kalın yazı */
-}
+        /* Menü başlıkları */
+        .menu-title {
+            color: rgba(255, 140, 0, 0.35);
+            font-weight: 900;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
 
-/* Menü kutuları içindeki ürün adları ve fiyat */
-.menu-box .product-name,
-.menu-box .product-price {
-    font-weight: 700; /* Kalın yazı */
-    color: #333333; /* Ürünler görünür ve koyu */
-}
+        /* Menü kutuları */
+        .menu-box {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            padding: 14px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
+        .menu-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ürün adı ve fiyat */
+        .product-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .product-price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .product-description {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            color: #555555;
+        }
     </style>
-
 </head>
 
 <body>
@@ -144,7 +170,7 @@
                     .filter(item => item.category.trim() === category)
                     .forEach(item => {
                         const box = document.createElement('div');
-                        box.className = 'menu-box shadow';
+                        box.className = 'menu-box';
 
                         box.innerHTML = `
                             <div class="flex justify-between items-start">
@@ -160,7 +186,6 @@
 
         loadMenu();
     </script>
-
 </body>
 
 </html>
