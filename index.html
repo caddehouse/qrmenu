@@ -23,20 +23,12 @@
             transform: translateX(-50%) rotate(-18deg);
             font-size: clamp(40px, 12vw, 150px);
             font-weight: 900;
-            color: rgba(255, 140, 0, 0.12);
+            color: rgba(0, 0, 0, 0.05); /* Siyah ton, hafif */
             z-index: -1;
             pointer-events: none;
             white-space: nowrap;
             user-select: none;
             text-align: center;
-        }
-
-        .watermark1 {
-            top: 40%;
-        }
-
-        .watermark2 {
-            top: 60%;
         }
 
         /* Menü başlıkları */
@@ -85,13 +77,17 @@
 </head>
 
 <body>
-    <div class="watermark watermark1" style="top: 20%;">CADDE HOUSE</div>
-<div class="watermark watermark2" style="top: 35%;">CADDE HOUSE</div>
-<div class="watermark watermark3" style="top: 50%;">CADDE HOUSE</div>
-<div class="watermark watermark4" style="top: 65%;">CADDE HOUSE</div>
-<div class="watermark watermark5" style="top: 80%;">CADDE HOUSE</div>
-
-    
+    <!-- 10 adet CADDE HOUSE watermark ile ekranı dolduruyoruz -->
+    <div class="watermark" style="top:5%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:15%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:25%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:35%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:45%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:55%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:65%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:75%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:85%;">CADDE HOUSE</div>
+    <div class="watermark" style="top:95%;">CADDE HOUSE</div>
 
     <header class="bg-white shadow-md">
         <div class="container mx-auto p-4 flex justify-center items-center">
