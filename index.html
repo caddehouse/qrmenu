@@ -17,19 +17,22 @@
     }
 
     /* Büyük ve daha çapraz CADDE HOUSE watermark */
-    .watermark {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-18deg); /* Daha fazla eğim */
-        font-size: 115px;  /* Daha büyük */
-        font-weight: 900;
-        color: rgba(255, 140, 0, 0.07); /* Çok silik turuncu-kahve */
-        z-index: -1;
-        pointer-events: none;
-        white-space: nowrap;
-        user-select: none;
-    }
+    /* Büyük ve çapraz CADDE HOUSE watermark */
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    font-size: clamp(40px, 12vw, 150px); /* Mobilden büyük ekrana uyumlu */
+    font-weight: 900;
+    color: rgba(255, 140, 0, 0.07);
+    z-index: -1;
+    pointer-events: none;
+    white-space: nowrap;
+    user-select: none;
+    text-align: center;
+}
+
 
     /* Menü kutuları */
     .menu-box {
