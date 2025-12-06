@@ -2,7 +2,7 @@ productName,productDescription,productPrice,productImage,category
 Ürün Adı, Açıklama, Fiyat, Resim, kategori
 Nargile + Çay,Saat 18:00'a Kadar Geçerli,250,,Kampanyalar
 Makarna + İçecek ,Saat 18:00'a Kadar Geçerli,250,,Kampanyalar
-Tavuk Yemeği + İçecek ,Saat 18:00'a Kadar Geçerli,250,,Kampanyalar
+Tavuk Yemeği + İçecek ,Saat 18:00'a Kadar Geçerli,300,,Kampanyalar
 Serpme Kahvaltı (2 Kişilik) ,Sınırsız Çay ve Türk Kahvesi İkram,550,,Kampanyalar
 
 
@@ -114,6 +114,7 @@ Su,,30,,Meşrubatlar
 Fincan Çay,,60,,Çaylar
 Bitkisel Çaylar,,125,,Çaylar
 Oralet Çeşitleri,,40,,Çaylar
+
 
 
 
