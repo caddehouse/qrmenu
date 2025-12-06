@@ -1,6 +1,6 @@
 productName,productDescription,productPrice,productImage,category
 Ürün Adı, Açıklama, Fiyat, Resim, kategori
-X Kampanya,,120,,Kampanyalar
+X Kampanya,,X,,Kampanyalar
 ,,,,
 Milkshake Çeşitleri,,130,,Özel Soğuk İçecekler
 Frozen Çeşitleri,,125,,Özel Soğuk İçecekler
@@ -109,6 +109,7 @@ Su,,30,,Meşrubatlar
 Fincan Çay,,60,,Çaylar
 Bitkisel Çaylar,,125,,Çaylar
 Oralet Çeşitleri,,40,,Çaylar
+
 
 
 
