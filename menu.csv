@@ -7,29 +7,29 @@ Serpme Kahvaltı (2 Kişilik) ,Sınırsız Çay ve Türk Kahvesi İkram,550,,Kam
 
 
 ,,,,
-Milkshake Çeşitleri,,130,,Özel Soğuk İçecekler
-Frozen Çeşitleri,,125,,Özel Soğuk İçecekler
+Milkshake Çeşitleri,,150,,Özel Soğuk İçecekler
+Frozen Çeşitleri,,150,,Özel Soğuk İçecekler
 ,,,,
-Ice Latte,,130,,Soğuk Kahveler
-Ice Mocha,,130,,Soğuk Kahveler
-Frappe,,130,,Soğuk Kahveler
-Ice White Chocolate Mocha,,130,,Soğuk Kahveler
+Ice Latte,,150,,Soğuk Kahveler
+Ice Mocha,,150,,Soğuk Kahveler
+Frappe,,150,,Soğuk Kahveler
+Ice White Chocolate Mocha,,150,,Soğuk Kahveler
 ,,,,
-Türk Kahvesi,,90,,Sıcak Kahveler
-Damla Sakızlı Türk Kahvesi,,90,,Sıcak Kahveler
-Sütlü Türk Kahvesi,,95,,Sıcak Kahveler
+Türk Kahvesi,,100,,Sıcak Kahveler
+Damla Sakızlı Türk Kahvesi,,110,,Sıcak Kahveler
+Sütlü Türk Kahvesi,,110,,Sıcak Kahveler
 Gold Kahve,,100,,Sıcak Kahveler
-Filtre Kahve,,100,,Sıcak Kahveler
+Filtre Kahve,,130,,Sıcak Kahveler
 Sütlü Nescafe,,130,,Sıcak Kahveler
-Espresso,,85,,Sıcak Kahveler
-Cappuccino,,100,,Sıcak Kahveler
-Americano,,100,,Sıcak Kahveler
-Karamel Macchiato,,125,,Sıcak Kahveler
-Latte,,125,,Sıcak Kahveler
-Mocha,,125,,Sıcak Kahveler
-White Chocolate Mocha,,125,,Sıcak Kahveler
-Menengiç,,100,,Sıcak Kahveler
-Dibek,,100,,Sıcak Kahveler
+Espresso,,110,,Sıcak Kahveler
+Cappuccino,,140,,Sıcak Kahveler
+Americano,,130,,Sıcak Kahveler
+Karamel Macchiato,,140,,Sıcak Kahveler
+Latte,,140,,Sıcak Kahveler
+Mocha,,140,,Sıcak Kahveler
+White Chocolate Mocha,,140,,Sıcak Kahveler
+Menengiç,,110,,Sıcak Kahveler
+Dibek,,110,,Sıcak Kahveler
 ,,,,
 Polka,,175,,Tatlılar
 Dubai Çikolatalı Pasta,,175,,Tatlılar
@@ -44,23 +44,23 @@ Trileçe,,175,,Tatlılar
 Magnolia,,175,,Tatlılar
 Sütlaç,,175,,Tatlılar
 ,,,,
-Patates Kızartması,,225,,Aperatifler
+Patates Kızartması,,230,,Aperatifler
 Combo Tabağı (1 Kişilik),,275,,Aperatifler
 Combo Tabağı (2 Kişilik),,400,,Aperatifler
-Sanayi Tostu,,260,,Aperatifler
-Karışık Tost,,260,,Aperatifler
-Sigara Böreği (6 Adet),,110,,Aperatifler
-Menemen,,150,,Aperatifler
+Sanayi Tostu,,240,,Aperatifler
+Karışık Tost,,240,,Aperatifler
+Sigara Böreği (6 Adet),,120,,Aperatifler
+Menemen,,175,,Aperatifler
 ,,,,
 Çoban Salata,,175,,Salatalar
 Köri Soslu Tavuklu Salata,,175,,Salatalar
 Çıtır Tavuk Salata,,210,,Salatalar
 ,,,,
-Napoliten,,235,,Makarnalar
-Penne Alfredo,,235,,Makarnalar
-Arabiata,,235,,Makarnalar
-Penne Köri,,235,,Makarnalar
-Etli Penne,,235,,Makarnalar
+Napoliten,,240,,Makarnalar
+Penne Alfredo,,240,,Makarnalar
+Arabiata,,240,,Makarnalar
+Penne Köri,,240,,Makarnalar
+Etli Penne,,240,,Makarnalar
 ,,,,
 Hamburger,,220,,Burgerler
 Cheeseburger,,220,,Burgerler
@@ -73,14 +73,14 @@ Mexican Soslu Tavuk,,340,,Tavuk Yemekleri
 Tavuk Sote,,340,,Tavuk Yemekleri
 Schnitzel,,340,,Tavuk Yemekleri
 ,,,,
-Serpme Kahvaltı (2 Kişilik),,500,,Kahvaltı
-Serpme Kahvaltı (3 Kişilik),,600,,Kahvaltı
+Serpme Kahvaltı (2 Kişilik),,600,,Kahvaltı
+Serpme Kahvaltı (3 Kişilik),,750,,Kahvaltı
 Omlet,,125,,Kahvaltı
 Kaşarlı Omlet,,150,,Kahvaltı
 Sucuklu Omlet,,150,,Kahvaltı
 Kıymalı Yumurta,,160,,Kahvaltı
-Menemen,,150,,Kahvaltı
-Kahvaltı Tabağı,,225,,Kahvaltı
+Menemen,,175,,Kahvaltı
+Kahvaltı Tabağı,,240,,Kahvaltı
 ,,,,
 Et Sote,,390,,Et Yemekleri
 Kuzu Mexican,,390,,Et Yemekleri
@@ -91,10 +91,10 @@ Kuzu Sac Tava,,390,,Et Yemekleri
 Atom (Karışık),,175,,Meyve Suları
 Atom (Şeftali),,175,,Meyve Suları
 Portakal Suyu,,140,,Meyve Suları
-Limonata,,125,,Meyve Suları
+Limonata,,140,,Meyve Suları
 ,,,,
 Sahlep,,140,,Özel Sıcak İçecekler
-Bal Badem Sahlep,,150,,Özel Sıcak İçecekler
+Bal Badem Sahlep,,140,,Özel Sıcak İçecekler
 Sıcak Çikolata,,140,,Özel Sıcak İçecekler
 Beyaz Sıcak Çikolata,,140,,Özel Sıcak İçecekler
 ,,,,
@@ -108,9 +108,9 @@ Ayran,,50,,Meşrubatlar
 Soda Çeşitleri,,65,,Meşrubatlar
 Sade Soda,,55,,Meşrubatlar
 Churchill,,140,,Meşrubatlar
-Su,,30,,Meşrubatlar
+Su,,35,,Meşrubatlar
 ,,,,
-Çay,,30,,Çaylar
+Çay,,35,,Çaylar
 Fincan Çay,,60,,Çaylar
 Bitkisel Çaylar,,125,,Çaylar
 Oralet Çeşitleri,,40,,Çaylar
